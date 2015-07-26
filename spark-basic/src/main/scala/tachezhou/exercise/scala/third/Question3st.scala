@@ -17,7 +17,8 @@ object Question3st {
     while(in.hasNext()) {
       val key  = in.next()
       val newvalue = map.getOrElse(key,0) + 1
-      map = map + (key -> newvalue)
+      //immutable实际上是没有 += 这个方法的，实际上这个方法和操作符的组合
+      map += (key -> newvalue)
     }
     map
   }
