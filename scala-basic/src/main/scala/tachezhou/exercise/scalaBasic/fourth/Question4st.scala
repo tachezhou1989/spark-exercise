@@ -14,7 +14,6 @@ object Question4st {
     var map = new scala.collection.immutable.TreeMap[String,Int]
     while (in.hasNext) {
       val key = in.next()
-      //执行了一个+操作，再执行了一个 = 操作
       map += key -> (map.getOrElse(key,0) + 1)
     }
     map

@@ -8,7 +8,6 @@ import java.util.Scanner
  */
 object Question2st {
 
-  //必须显示指定hashMap的范型
   def wordCount(fileName: String): scala.collection.mutable.HashMap[String,Int] = {
     val result = new scala.collection.mutable.HashMap[String,Int]
     val file = new File(Thread.currentThread().getContextClassLoader.getResource(fileName).toURI)

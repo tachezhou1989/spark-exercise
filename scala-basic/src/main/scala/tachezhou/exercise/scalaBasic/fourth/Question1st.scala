@@ -13,7 +13,6 @@ object Question1st {
   def main(args: Array[String]): Unit = {
     val toolsMap = scala.collection.mutable.HashMap("gun" -> 1000D,"light" -> 30D,"pen" -> 20D)
     discount(toolsMap,0.9)
-    //map²»±£Ö¤Ë³Ðò
     toolsMap.foreach(println(_))
   }
 }

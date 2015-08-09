@@ -2,7 +2,7 @@ package tachezhou.exercise.scalaBasic.fourth
 
 import java.io.File
 import java.util.Scanner
-//必须引入这个类才能
+//锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷
 import scala.collection.JavaConversions.mapAsScalaMap
 
 /**
@@ -12,7 +12,6 @@ object Question5st {
   def wordCount(fileName: String): scala.collection.mutable.Map[String,Int] = {
     val file = new File(Thread.currentThread().getContextClassLoader.getResource(fileName).toURI)
     val in = new Scanner(file)
-    //必须显示的转换为scala map
     val map:scala.collection.mutable.Map[String,Int] = new java.util.TreeMap[String,Int]()
     while (in.hasNext) {
       val key = in.next()

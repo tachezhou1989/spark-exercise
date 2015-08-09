@@ -10,7 +10,6 @@ object Question10st {
     result.foreach(println(_))
   }
 
-  //zip操作将String当做char的数组来进行处理
   def showZipCharArray(a1: Array[Char],a2: Array[Char]): Unit = {
     val result = a1.zip(a2)
     result.foreach(println(_))
